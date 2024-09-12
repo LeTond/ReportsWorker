@@ -1,28 +1,13 @@
 from Algorithm.reports_segmentation import *
 from Keys.global_keys import *
 
-# from Keys.key_words_HEAD_mri import *
-# from Keys.key_words_JOINTS_mri import *
 from Keys.key_words_SPINE_mri import *
-# from Keys.key_words_PELVIS_mri import *
 
 from Algorithm.export_authomatization import *
 from time import time
 from collections import deque
 
 import multiprocessing as mp
-
-
-# def line_profile(func):
-#     def wrapper(*args, **kwargs):
-#         from line_profiler import LineProfiler
-#         prof = LineProfiler()
-#         try:
-#             return prof(func)(*args, **kwargs)
-#         finally:
-#             prof.print_stats()
-#
-#     return wrapper
 
 
 def mri_preproc_start():
@@ -102,7 +87,7 @@ if __name__ == "__main__":
     exporting reports to server
     """
     # export(export_link, root, recursion_way)
-    # for dirpath, dirnames, filenames in os.walk('/home/lg/Dropbox/Conclusion/MEDICAL REPORTS/Рентген Тексты'):
+    # for dirpath, dirnames, filenames in os.walk('/path_to_data'):
     #     # перебрать каталоги
     #     for dirname in dirnames:
     #         if dirname.endswith("-"):
