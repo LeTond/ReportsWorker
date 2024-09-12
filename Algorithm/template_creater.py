@@ -6,14 +6,14 @@ import os
 from docx import Document
 
 
-ROOT_DIR = "/home/lg/PycharmProjects/DOC_Reading"
+ROOT_DIR = "root_directory"
 EMPTY_STR = ""
 
 
 class Template:
     def __init__(self):
         self.list_glob = []
-        self.path_to_directory = "/home/lg/PycharmProjects/DOC_Reading/МРТ"
+        self.path_to_directory = "/path_to_data"
 
     def template(self):
         """
