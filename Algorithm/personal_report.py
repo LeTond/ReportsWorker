@@ -82,7 +82,7 @@ if __name__ == '__main__':
              'patient_name': 'Test_08',
              'report_date': '2021-09-08',
              'birthday': '2021-01-02'}
-    url = "https://kharlinmobile.com:3001/api/import/reports/import-for-user?"
+    url = "...."
     pr = PersonalReports(url)
     # pprint(pr.post_request(pr.read_one_file(pr.import_one_document()), keys_))
     # pprint(pr.post_request(pr.read_directories(), keys_))
