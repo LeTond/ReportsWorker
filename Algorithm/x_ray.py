@@ -24,7 +24,7 @@ class Xray:
             for filename in filenames:
                 if '.docx' in filename and dir_path.endswith('-'):  #and 'converted_' in dir_path
                     path_new = dir_path.replace('converted_', '')\
-                        .lstrip('/home/lg/Dropbox/Conclusion/MEDICAL REPORTS/')\
+                        .lstrip('/path_to_medical_data/MEDICAL REPORTS/')\
                         .rstrip('-')\
                         .replace('-/', '/').replace('/', '//')
                     self.segment_else(filename, path_new, dir_path)
@@ -59,7 +59,7 @@ class Xray:
 
 
 if __name__ == '__main__':
-    xray = Xray('/home/lg/Dropbox/Conclusion/MEDICAL REPORTS/Рентген/')
+    xray = Xray('/path_to_xray_reports')
     # xray.convert_xray_files()
     # xray.prepare_xray_conclusion()
     xray.export_to_database()
