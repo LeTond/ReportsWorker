@@ -123,13 +123,13 @@ class DocumentFilter:
 
 
 if __name__ == '__main__':
-    # url = "https://kharlinmobile.com:3001/api/import/reports/import-for-user?"
+    # url = "..."
     # docx_(
     #     root,
-    #     '/home/lg/PycharmProjects/DOC_Reading/Шмедык НЮ',
-    #     '/home/lg/PycharmProjects/DOC_Reading/Шмедык НЮ2'
+    #     '/...',
+    #     '/...'
     # )
-    url = "https://client.quickradiology.com:3001/api/import/reports/import-for-user?"
+    url = "..."
     pr = PersonalReports(url)
     for r_n in pr.read_directories():
         d_f = DocumentFilter(root, r_n)
