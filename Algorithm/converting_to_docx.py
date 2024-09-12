@@ -58,8 +58,8 @@ def copy_docx_to_new_directory(current_path, new_path):
 
 
 if __name__ == '__main__':
-    root = "/home/lg/PycharmProjects/DOC_Reading"
-    old_path = "/home/lg/PycharmProjects/DOC_Reading/МРТ"
-    new_path = "/home/lg/PycharmProjects/DOC_Reading/segmented_МРТ"
+    root = "/root_directory"
+    old_path = "/path_to_old_directory"
+    new_path = "/path_to_new_directory"
     docx_(root, old_path, new_path)
 
