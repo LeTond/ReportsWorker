@@ -49,7 +49,7 @@ class AutoExport:
         opts.set_headless()
         assert opts.headless
 
-        browser = Chrome('/home/lg/PycharmProjects/DOC_Reading/chromedriver', options=opts)
+        browser = Chrome('/path_to_chrome_driver/chromedriver', options=opts)
         browser.get(self.link)
         input_form = browser.find_element_by_name('importtool_text')
         input_form.send_keys(self.full_text1 + list('\n\n') + self.full_text2)
